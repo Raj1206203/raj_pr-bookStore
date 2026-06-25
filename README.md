@@ -1,152 +1,243 @@
-📚 Book Store Management System
+# 📚 Book Store Management System
 
-📖 Description
+A RESTful backend application built with **Node.js**, **Express.js**, **MongoDB**, and **Mongoose** that provides complete book and user management functionality using the **MVC (Model-View-Controller)** architecture.
 
-The Book Store Management System is a RESTful backend application developed using Node.js, Express.js, MongoDB, and Mongoose. This project is designed to manage books and users efficiently while following industry-standard MVC (Model-View-Controller) architecture.
+---
 
-The application provides complete CRUD functionality for book management, allowing users to add, view, search, update, and delete books. It also includes user registration and login functionality with custom validation and middleware implementation to ensure data integrity and maintain clean application flow.
+## 📖 Project Overview
 
-This project was built to strengthen backend development skills and gain hands-on experience with API development, database management, middleware implementation, request validation, error handling, and scalable project architecture. It serves as a strong foundation for building advanced e-commerce or online bookstore applications.
+The **Book Store Management System** is a backend API designed to efficiently manage books and users while following industry-standard development practices. It provides secure and scalable REST APIs for performing CRUD operations on books along with user registration and authentication features.
 
-🚀 Key Features
+The project emphasizes clean code architecture, middleware implementation, request validation, error handling, and efficient database management. It was developed as a learning-oriented project to strengthen backend development skills and serves as a portfolio-ready application demonstrating real-world API development.
 
-👤 User Management
+---
 
-User Registration
+## 🚀 Features
 
-User Login
+### 👤 User Management
 
-Email-Based User Verification
+* User Registration
+* User Login
+* Email-Based User Verification
+* Duplicate User Prevention
+* Request Validation Middleware
 
-Duplicate User Prevention
+### 📚 Book Management
 
-Request Validation Middleware
+* Add New Books
+* View All Books
+* Search Books by Title
+* Get Single Book Details
+* Update Book Information
+* Delete Books
 
-📚 Book Management
+### 🛡️ Middleware & Validation
 
-Add New Books
+* Custom Validation Middleware
+* User Input Validation
+* Book Data Validation
+* Global Error Handling Middleware
+* Express Request Processing Middleware
 
-View All Books
+### 🗄️ Database Management
 
-Search Books by Title
+* MongoDB Integration
+* Mongoose Schema Validation
+* Data Modeling with Mongoose
+* Complete CRUD Operations
+* Optimized Database Queries
 
-Get Single Book Details
+---
 
-Update Book Information'
+## 🏗️ Project Architecture
 
-Delete Books
+This project follows the **MVC (Model-View-Controller)** architecture to keep the code organized, scalable, and maintainable.
 
-🛡️ Middleware & Validation
+```
+Book-Store-Management-System/
+│
+├── controllers/
+├── models/
+├── routes/
+├── middleware/
+├── config/
+├── services/
+├── validators/
+├── utils/
+├── app.js
+├── server.js
+└── package.json
+```
 
-Custom Validation Middleware
+### MVC Structure
 
-User Input Validation
+* **Models** – Define MongoDB schemas and interact with the database.
+* **Controllers** – Handle business logic and process client requests.
+* **Routes** – Define REST API endpoints.
+* **Middleware** – Validate requests, handle errors, and manage request flow.
+* **Database** – MongoDB stores application data using Mongoose ODM.
 
-Book Data Validation
+---
 
-Global Error Handling Middleware
+## 🛠️ Tech Stack
 
-Request Processing using Express Middleware
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JavaScript (ES6+)
+* Dotenv
+* Nodemon
+* Postman
 
-🗄️ Database Management
+---
 
-MongoDB Integration
+## 📌 REST API Features
 
-Mongoose Schema Validation
+### Authentication APIs
 
-Data Modeling with Mongoose
+* Register User
+* Login User
+* Email Verification
 
-CRUD Operations
+### Book APIs
 
-Efficient Database Queries
+* Create Book
+* Get All Books
+* Search Books
+* Get Book by ID
+* Update Book
+* Delete Book
 
-🏗️ Architecture
+---
 
-The project follows the MVC (Model-View-Controller) architecture:
-
-Models manage database schemas and data operations.
-
-Controllers handle application business logic.
-
-Routes define API endpoints.
-
-Middleware validates requests and handles errors.
-
-MongoDB stores application data efficiently.
-
-This architecture improves code maintainability, scalability, and readability, making the application suitable for future enhancements.
-
-🛠️ Tech Stack
-
-Node.js
-
-Express.js
-
-MongoDB
-
-Mongoose
-
-Dotenv
-
-Nodemon
-
-Postman
-
-🎯 Learning Objectives
+## 🎯 Learning Outcomes
 
 This project demonstrates practical implementation of:
 
-REST API Development
+* REST API Development
+* Express.js Routing
+* MongoDB Integration
+* Mongoose Schema Design
+* CRUD Operations
+* MVC Architecture
+* Middleware Development
+* Request Validation
+* Error Handling
+* Backend Project Structure
+* API Testing using Postman
 
-Express.js Routing
+---
 
-MongoDB Integration
+## 📦 Installation
 
-Mongoose Schema Design
+### Clone the Repository
 
-CRUD Operations
+```bash
+git clone <repository-url>
+```
 
-MVC Architecture
+### Navigate to the Project
 
-Middleware Development
+```bash
+cd Book-Store-Management-System
+```
 
-Request Validation
+### Install Dependencies
 
-Error Handling
+```bash
+npm install
+```
 
-Backend Project Structure
+### Configure Environment Variables
 
-API Testing with Postman
+Create a `.env` file in the root directory and add:
 
-🔮 Future Enhancements
+```env
+PORT=5000
+MONGODB_URL=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
 
-Password Hashing using bcrypt
+### Start Development Server
 
-JWT Authentication & Authorization
+```bash
+npm run dev
+```
 
-Role-Based Access Control
+The server will start on:
 
-Shopping Cart System
+```text
+http://localhost:5000
+```
 
-Order Management
+---
 
-Book Categories & Genres
+## 🧪 API Testing
 
-Pagination & Filtering
+You can test all API endpoints using:
 
-Reviews & Ratings
+* Postman
+* Thunder Client
+* Insomnia
 
-Image Upload Support
+---
 
-Payment Gateway Integration
+## 🔮 Future Enhancements
 
-👨‍💻 Developer
+* Password Hashing using bcrypt
+* JWT Authentication & Authorization
+* Role-Based Access Control
+* Shopping Cart System
+* Order Management
+* Book Categories & Genres
+* Pagination & Filtering
+* Reviews & Ratings
+* Image Upload Support
+* Payment Gateway Integration
 
-Raj D Patel
+---
 
-BCA Graduate | Aspiring Full Stack Developer
+## 📹 Project Demonstration
 
-This project was developed as a learning-oriented backend application to gain practical experience in modern web development technologies, database management, API design, middleware implementation, and software architecture principles. It reflects a strong understanding of backend development concepts and serves as a portfolio-ready project for showcasing full-stack development skills. 🚀
+Watch the complete project walkthrough and API demonstration in the video linked below.
 
+---
 
-Video Link : https://screenrec.com/share/qTw6RBxt8f
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you would like to improve this project:
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+---
+
+## 👨‍💻 Developer
+
+**Raj D Patel**
+
+**BCA Graduate | Aspiring Full Stack Developer**
+
+Passionate about building scalable web applications using modern backend technologies. This project reflects practical knowledge of RESTful API development, database management, middleware implementation, software architecture, and clean coding practices.
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a **⭐ Star** on GitHub. It helps support the project and motivates future improvements.
+
+---
+
+## 📄 License
+
+This project is developed for **educational and portfolio purposes**.
+
+## Project Demo 
+
+https://drive.google.com/file/d/1zsEz_dE8fQXWhrKoyDiz-h9vscpuc64N/view?usp=drive_link
